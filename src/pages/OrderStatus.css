@@ -9,7 +9,7 @@
 .order-status-container {
   max-width: 600px;
   margin: 0 auto;
-  background: white;
+  background: var(--store-accent);
   border-radius: 16px;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   backdrop-filter: blur(20px);
@@ -19,7 +19,7 @@
 /* Header Styles */
 .order-header {
   background: linear-gradient(135deg, var(--store-accent), var(--store-secondary));
-  color: white;
+  color: var(--store-accent);
   padding: 2rem;
   text-align: center;
   position: relative;
@@ -70,7 +70,7 @@
 /* Status Card */
 .status-card {
   padding: 2rem;
-  border-bottom: 1px solid #e9ecef;
+  border-bottom: 1px solid var(--store-secondary);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -85,7 +85,7 @@
   display: inline-block;
   padding: 0.5rem 1rem;
   border-radius: 20px;
-  color: white;
+  color: var(--store-accent);
   font-weight: 600;
   font-size: 0.9rem;
   margin-bottom: 1rem;
@@ -93,12 +93,12 @@
 
 .status-details p {
   margin: 0.5rem 0;
-  color: #6c757d;
+  color: var(--store-accent);
   font-size: 0.95rem;
 }
 
 .status-details strong {
-  color: #495057;
+  color: var(--store-accent);
 }
 
 .refresh-section {
@@ -106,18 +106,18 @@
 }
 
 .refresh-btn {
-  background: #f8f9fa;
+  background: var(--store-primary);
   border: 1px solid #dee2e6;
   border-radius: 8px;
   padding: 0.75rem 1rem;
   cursor: pointer;
   font-size: 0.9rem;
   transition: all 0.3s ease;
-  color: #495057;
+  color: var(--store-accent);
 }
 
 .refresh-btn:hover {
-  background: #e9ecef;
+  background: var(--store-secondary);
   transform: translateY(-1px);
 }
 
@@ -142,7 +142,7 @@
 .order-notes,
 .next-steps {
   padding: 2rem;
-  border-bottom: 1px solid #e9ecef;
+  border-bottom: 1px solid var(--store-secondary);
 }
 
 .order-summary h3,
@@ -151,7 +151,7 @@
 .order-notes h3,
 .next-steps h3 {
   margin: 0 0 1rem 0;
-  color: #495057;
+  color: var(--store-accent);
   font-size: 1.25rem;
   font-weight: 600;
 }
@@ -168,7 +168,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.75rem 0;
-  border-bottom: 1px solid #f8f9fa;
+  border-bottom: 1px solid var(--store-primary);
 }
 
 .summary-item:last-child {
@@ -177,7 +177,7 @@
 }
 
 .total-amount {
-  color: #28a745;
+  color: var(--store-secondary);
   font-weight: 700;
   font-size: 1.1rem;
 }
@@ -194,9 +194,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: #f8f9fa;
+  background: var(--store-primary);
   border-radius: 8px;
-  border: 1px solid #e9ecef;
+  border: 1px solid var(--store-secondary);
 }
 
 .item-info {
@@ -207,37 +207,37 @@
 
 .item-name {
   font-weight: 600;
-  color: #495057;
+  color: var(--store-accent);
 }
 
 .item-quantity {
   font-size: 0.85rem;
-  color: #6c757d;
+  color: var(--store-accent);
 }
 
 .item-price {
   font-weight: 600;
-  color: #000000;
+  color: var(--store-primary)000;
 }
 
 /* Customer Info */
 .contact-details p {
   margin: 0.5rem 0;
-  color: #6c757d;
+  color: var(--store-accent);
 }
 
 .contact-details strong {
-  color: #495057;
+  color: var(--store-accent);
 }
 
 /* Order Notes */
 .order-notes p {
-  background: #f8f9fa;
+  background: var(--store-primary);
   padding: 1rem;
   border-radius: 8px;
   border-left: 4px solid #667eea;
   margin: 0;
-  color: #495057;
+  color: var(--store-accent);
   font-style: italic;
 }
 
@@ -245,25 +245,25 @@
 .success-steps,
 .pending-steps,
 .failed-steps {
-  background: #f8f9fa;
+  background: var(--store-primary);
   padding: 1rem;
   border-radius: 8px;
-  border-left: 4px solid #28a745;
+  border-left: 4px solid var(--store-secondary);
 }
 
 .pending-steps {
-  border-left-color: #ffc107;
+  border-left-color: var(--store-secondary);
 }
 
 .failed-steps {
-  border-left-color: #dc3545;
+  border-left-color: var(--store-secondary);
 }
 
 .success-steps p,
 .pending-steps p,
 .failed-steps p {
   margin: 0.5rem 0;
-  color: #495057;
+  color: var(--store-accent);
 }
 
 /* Action Buttons */
@@ -292,7 +292,7 @@
 
 .btn-primary {
   background: var(--store-accent);
-  color: white;
+  color: var(--store-accent);
 }
 
 .btn-primary:hover {
@@ -302,8 +302,8 @@
 }
 
 .btn-secondary {
-  background: #6c757d;
-  color: white;
+  background: var(--store-accent);
+  color: var(--store-accent);
 }
 
 .btn-secondary:hover {
@@ -313,12 +313,12 @@
 }
 
 .btn-warning {
-  background: #ffc107;
-  color: #212529;
+  background: var(--store-secondary);
+  color: var(--store-primary);
 }
 
 .btn-warning:hover {
-  background: #e0a800;
+  background: var(--store-primary);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
 }
@@ -345,7 +345,7 @@
 .loading-state h2,
 .error-state h2,
 .not-found-state h2 {
-  color: #495057;
+  color: var(--store-accent);
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
 }
@@ -353,7 +353,7 @@
 .loading-state p,
 .error-state p,
 .not-found-state p {
-  color: #6c757d;
+  color: var(--store-accent);
   margin-bottom: 1.5rem;
 }
 

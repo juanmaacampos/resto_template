@@ -4,9 +4,9 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(9, 35, 39, 0.95); /* Using Gunmetal */
+  background: rgba(1, 1, 1, 0.95); /* Anthony Black */
   backdrop-filter: blur(20px);
-  border-top: 1px solid rgba(0, 169, 165, 0.2); /* Turquoise border */
+  border-top: 1px solid rgba(254, 211, 2, 0.3); /* Anthony Yellow border */
   transform: translateY(100%);
   transition: transform 0.3s ease;
   padding: 0.5rem 0;
@@ -35,7 +35,6 @@
   align-items: center;
   flex: 1;
   gap: 2.5rem; /* Aumentado para separar los ítems */
-  border: 2px dashed #e55a2e; /* Borde temporal para depuración */
 }
 
 .nav-item {
@@ -55,7 +54,7 @@
 
 .nav-item.active {
   color: var(--store-secondary);
-  background: rgba(0, 169, 165, 0.1);
+  background: rgba(254, 211, 2, 0.2);
 }
 
 .nav-item:hover {
@@ -77,19 +76,19 @@
   margin-left: 1rem;
   position: relative;
   background: linear-gradient(135deg, var(--store-secondary), var(--store-accent)) !important;
-  border: 2px solid rgba(0, 169, 165, 0.3) !important;
-  color: white !important;
-  box-shadow: 0 4px 12px rgba(0, 169, 165, 0.3);
+  border: 2px solid rgba(254, 211, 2, 0.3) !important;
+  color: var(--store-primary) !important;
+  box-shadow: 0 4px 12px rgba(254, 211, 2, 0.3);
   border-radius: 15px !important;
   min-width: 70px !important;
   padding: 0.75rem !important;
 }
 
 .cart-nav-item:hover {
-  background: linear-gradient(135deg, var(--store-accent), #3a6b7a) !important;
+  background: linear-gradient(135deg, var(--store-accent), var(--store-primary)) !important;
   transform: translateY(-4px) scale(1.05) !important;
-  box-shadow: 0 8px 20px rgba(0, 169, 165, 0.5) !important;
-  border-color: rgba(0, 169, 165, 0.6) !important;
+  box-shadow: 0 8px 20px rgba(254, 211, 2, 0.5) !important;
+  border-color: rgba(254, 211, 2, 0.6) !important;
 }
 
 .cart-icon-container {
@@ -114,7 +113,7 @@
   position: absolute;
   top: -12px;
   right: -12px;
-  background: #ffffff;
+  background: var(--white);
   color: var(--store-secondary);
   border-radius: 50%;
   width: 22px;
@@ -135,9 +134,9 @@
 }
 
 .cart-nav-item:hover .cart-badge {
-  background: #fff;
-  color: #e55a2e;
-  border-color: #e55a2e;
+  background: var(--white);
+  color: var(--store-secondary);
+  border-color: var(--store-secondary);
   transform: scale(1.15);
   animation: none;
 }
@@ -240,10 +239,10 @@
 }
 
 .cart-nav-item-desktop:hover {
-  background: linear-gradient(135deg, var(--store-accent), #3a6b7a);
+  background: linear-gradient(135deg, var(--store-accent), var(--store-primary));
   transform: translateY(-2px) scale(1.04);
-  box-shadow: 0 8px 20px rgba(0, 169, 165, 0.25);
-  border-color: rgba(0, 169, 165, 0.6);
+  box-shadow: 0 8px 20px rgba(254, 211, 2, 0.25);
+  border-color: rgba(254, 211, 2, 0.6);
 }
 
 .cart-icon-container-desktop {
@@ -256,7 +255,7 @@
   position: absolute;
   top: -12px;
   right: -16px;
-  background: #fff;
+  background: var(--white);
   color: var(--store-secondary);
   border-radius: 50%;
   width: 24px;
@@ -277,9 +276,9 @@
 }
 
 .cart-nav-item:hover .cart-badge {
-  background: #fff;
-  color: #e55a2e;
-  border-color: #e55a2e;
+  background: var(--white);
+  color: var(--store-secondary);
+  border-color: var(--store-secondary);
   transform: scale(1.15);
   animation: none;
 }

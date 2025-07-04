@@ -7,8 +7,8 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-brand">
-            <h3>DIGITAL STORE</h3>
-            <p>Tu propia tienda digital :)</p>
+            <h3>ANTHONY BURGER</h3>
+            <p>Las mejores hamburguesas artesanales</p>
           </div>
           
           <div className="footer-social">
@@ -30,15 +30,15 @@ const Footer = () => {
           </div>
           
           <div className="footer-contact">
-            <h4>Contact</h4>
-            <p>123 Main Street</p>
-            <p>+1 (555) 123-4567</p>
-            <p>info@yourrestaurant.com</p>
+            <h4>Contacto</h4>
+            <p>Av. Principal 123</p>
+            <p>+54 11 1234-5678</p>
+            <p>info@anthonyburger.com</p>
           </div>
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2025 DIGITAL STORE. Plantilla creada por <a href="https://jmcdev.site" target="_blank" rel="noopener noreferrer">JMCDEV</a>.</p>
+          <p>&copy; 2025 ANTHONY BURGER. Creado por <a href="https://jmcdev.site" target="_blank" rel="noopener noreferrer">JMCDEV</a>.</p>
         </div>
       </div>
     </footer>

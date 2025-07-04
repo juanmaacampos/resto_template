@@ -23,15 +23,15 @@
 
 /* CSS Variables for consistent theming */
 :root {
-  /* Colors - New Blue-Green Palette */
-  --primary-color: #90C2E7; /* Light Sky Blue */
-  --secondary-color: #092327; /* Gunmetal */
-  --accent-color: #00A9A5; /* Light sea green */
-  --text-color: #090909; /* Almost black for contrast */
-  --text-light: #4E8098; /* Air Force blue */
-  --background-color: #0B5351; /* Dark slate gray */
-  --error-color: #e74c3c;
-  --success-color: #00A9A5; /* Using our turquoise for success */
+  /* Colors - Anthony Burger Palette */
+  --primary-color: #fed302; /* Anthony Yellow */
+  --secondary-color: #010101; /* Black */
+  --accent-color: #fed302; /* Anthony Yellow */
+  --text-color: #ffffff; /* White for contrast */
+  --text-light: #fed302; /* Yellow for highlights */
+  --background-color: #010101; /* Black background */
+  --error-color: #fed302;
+  --success-color: #fed302; /* Using Anthony yellow for success */
   
   /* Typography */
   --font-primary: 'Arial', sans-serif;

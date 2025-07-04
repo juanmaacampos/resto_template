@@ -16,7 +16,7 @@ export const MENU_CONFIG = {
   
   // 🆔 Business/Restaurant ID (UID del propietario en Firebase Auth)
   // 📝 Obtener ejecutando en consola: firebase.auth().currentUser.uid
-  businessId: "OANNHilb2kZOVQKx7fb80hPrAL92",
+  businessId: "0X2PjjSrO8hZmq2wZtREoKR9gej1",
   
   // 👁️ Configuración de Visibilidad de Items
   itemVisibility: {
@@ -117,9 +117,9 @@ export function validateConfig() {
 
 export const STORE_TERMINOLOGY = {
   // 🏷️ Nombres del negocio
-  businessName: "Mi Negocio", // Cambiar por el nombre real
-  menuName: "catálogo", // catálogo, menú, carta, productos
-  menuNameCapitalized: "Nuestro Catálogo", // Para títulos
+  businessName: "Anthony Burger", // Cambiar por el nombre real
+  menuName: "Menu", // catálogo, menú, carta, productos
+  menuNameCapitalized: "Nuestro MEnu", // Para títulos
   
   // 📦 Productos/Items
   items: "productos", // productos, platos, artículos, items
@@ -150,14 +150,14 @@ export const BUSINESS_TEMPLATES = {
   store: {
     businessName: "Mi Tienda",
     menuName: "catálogo",
-    menuNameCapitalized: "Nuestro Catálogo",
-    items: "productos",
-    itemsCapitalized: "Productos",
+    menuNameCapitalized: "Nuestro Menu",
+    items: "platos",
+    itemsCapitalized: "Platos",
     addToCart: "Agregar al Carrito",
     orderSummary: "Carrito de Compras",
-    categoriesOfMenu: "Categorías de Productos",
-    featuredProducts: "Productos Destacados",
-    allProducts: "Todos los Productos",
+    categoriesOfMenu: "Categorías de Platos",
+    featuredProducts: "Platos Destacados",
+    allProducts: "Todos los Platos",
     serviceOptions: {
       delivery: "Envío a Domicilio",
       pickup: "Retiro en Tienda",

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { FaStore, FaHome, FaBoxOpen, FaMapMarkerAlt, FaEnvelope, FaShoppingCart, FaBars, FaSearch } from 'react-icons/fa';
 import { ProductSearch } from '../ui';
 import { Link } from 'react-router-dom';
+import anthonyLogo from '../../assets/Anthony logo.svg';
 import '../../styles/navigation/NavbarModern.css';
 
 const Navbar = ({ onCartClick, itemCount, hideMainNavLinks, hideNavLinks }) => {
@@ -50,7 +51,7 @@ const Navbar = ({ onCartClick, itemCount, hideMainNavLinks, hideNavLinks }) => {
 
   const navItems = [
     { id: 'home', icon: FaHome, label: 'Inicio' },
-    { id: 'menu', icon: FaBoxOpen, label: 'Productos' },
+    { id: 'menu', icon: FaBoxOpen, label: 'Menú' },
     { id: 'location', icon: FaMapMarkerAlt, label: 'Ubicación' },
     { id: 'contact', icon: FaEnvelope, label: 'Contacto' }
   ];
@@ -60,8 +61,11 @@ const Navbar = ({ onCartClick, itemCount, hideMainNavLinks, hideNavLinks }) => {
       <div className="navbar-modern-container">
         {/* Logo */}
         <Link to="/" className="navbar-modern-logo">
-          <FaStore className="navbar-modern-logo-icon" />
-          Digital Store
+          <img 
+            src={anthonyLogo} 
+            alt="Anthony Burger" 
+            className="navbar-modern-logo-img"
+          />
         </Link>
         {/* Desktop menu */}
         <div className="navbar-modern-menu">

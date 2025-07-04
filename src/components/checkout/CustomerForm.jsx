@@ -77,7 +77,7 @@ const CustomerForm = ({ onSubmit, loading, paymentMethod }) => {
       <h3>Información de Contacto</h3>
       
       <div className="form-group">
-        <label htmlFor="name"><FaUser style={{marginRight: 6, color: '#009688'}} /> Nombre completo *</label>
+        <label htmlFor="name"><FaUser style={{ marginRight: 6, color: 'var(--secondary-color)' }} /> Nombre completo *</label>
         <input
           type="text"
           id="name"
@@ -91,7 +91,7 @@ const CustomerForm = ({ onSubmit, loading, paymentMethod }) => {
       </div>
 
       <div className="form-group">
-        <label htmlFor="phone"><FaPhoneAlt style={{marginRight: 6, color: '#009688'}} /> Teléfono *</label>
+        <label htmlFor="phone"><FaPhoneAlt style={{ marginRight: 6, color: 'var(--secondary-color)' }} /> Teléfono *</label>
         <input
           type="tel"
           id="phone"
@@ -106,7 +106,7 @@ const CustomerForm = ({ onSubmit, loading, paymentMethod }) => {
       </div>
 
       <div className="form-group">
-        <label htmlFor="email"><FaEnvelope style={{marginRight: 6, color: '#009688'}} /> Email</label>
+        <label htmlFor="email"><FaEnvelope style={{ marginRight: 6, color: 'var(--secondary-color)' }} /> Email</label>
         <input
           type="email"
           id="email"
@@ -132,8 +132,8 @@ const CustomerForm = ({ onSubmit, loading, paymentMethod }) => {
             display: 'flex',
             alignItems: 'center'
           }}>
-            <FaStore style={{ marginRight: '0.5rem', color: '#856404' }} />
-            <span style={{ color: '#856404', fontWeight: '500' }}>
+            <FaStore style={{ marginRight: '0.5rem', color: 'var(--secondary-color)' }} />
+            <span style={{ color: 'var(--secondary-color)', fontWeight: '500' }}>
               El pago en efectivo solo está disponible para retiro en local
             </span>
           </div>
@@ -164,7 +164,7 @@ const CustomerForm = ({ onSubmit, loading, paymentMethod }) => {
                 onChange={handleDeliveryOptionChange}
                 style={{ marginRight: '0.5rem' }}
               />
-              <FaStore style={{ marginRight: '0.5rem', color: '#009688' }} /> Retiro en local
+              <FaStore style={{ marginRight: '0.5rem', color: 'var(--secondary-color)' }} /> Retiro en local
             </label>
             <label 
               className="radio-option" 
@@ -188,7 +188,7 @@ const CustomerForm = ({ onSubmit, loading, paymentMethod }) => {
                 onChange={handleDeliveryOptionChange}
                 style={{ marginRight: '0.5rem' }}
               />
-              <FaTruck style={{ marginRight: '0.5rem', color: '#009688' }} /> Envío a domicilio
+              <FaTruck style={{ marginRight: '0.5rem', color: 'var(--secondary-color)' }} /> Envío a domicilio
             </label>
           </div>
         </div>
@@ -197,7 +197,7 @@ const CustomerForm = ({ onSubmit, loading, paymentMethod }) => {
       {/* Campo de dirección - solo si se selecciona envío a domicilio y NO es efectivo */}
       {formData.deliveryOption === 'delivery' && paymentMethod !== 'cash' && (
         <div className="form-group">
-          <label htmlFor="address"><FaMapMarkerAlt style={{marginRight: 6, color: '#009688'}} /> Dirección *</label>
+          <label htmlFor="address"><FaMapMarkerAlt style={{ marginRight: 6, color: 'var(--secondary-color)' }} /> Dirección *</label>
           <textarea
             id="address"
             name="address"
@@ -212,7 +212,7 @@ const CustomerForm = ({ onSubmit, loading, paymentMethod }) => {
       )}
 
       <div className="form-group">
-        <label htmlFor="notes"><FaStickyNote style={{marginRight: 6, color: '#009688'}} /> Notas adicionales</label>
+        <label htmlFor="notes"><FaStickyNote style={{ marginRight: 6, color: 'var(--secondary-color)' }} /> Notas adicionales</label>
         <textarea
           id="notes"
           name="notes"

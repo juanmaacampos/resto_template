@@ -2,8 +2,8 @@
   width: 100%;
   overflow-x: auto;
   padding: 0.5rem 0 0.7rem 0;
-  background: #fff;
-  border-bottom: 1px solid #eee;
+  background: var(--store-accent);
+  border-bottom: 1px solid var(--store-secondary);
   display: none;
 }
 
@@ -22,9 +22,9 @@
 }
 
 .category-pill-mobile {
-  border: 2px solid var(--store-accent, #e13b2e);
-  background: var(--store-bg, #fff);
-  color: var(--store-accent, #e13b2e);
+  border: 2px solid var(--store-accent, #fed302);
+  background: var(--store-bg, #010101);
+  color: var(--store-accent, #fed302);
   border-radius: 32px;
   padding: 0.5rem 1.2rem;
   font-size: 1rem;
@@ -34,7 +34,7 @@
   cursor: pointer;
   transition: background 0.2s, color 0.2s, border 0.2s;
   outline: none;
-  white-space: nowrap;
+  var(--store-accent)-space: nowrap;
   box-shadow: none;
   margin: 0;
   display: flex;
@@ -44,17 +44,17 @@
 
 .category-pill-mobile.active,
 .category-pill-mobile:focus {
-  background: var(--store-bg, #fff);
-  color: var(--store-accent, #e13b2e);
-  border: 2.5px solid var(--store-accent, #e13b2e);
+  background: var(--store-bg, #010101);
+  color: var(--store-accent, #fed302);
+  border: 2.5px solid var(--store-accent, #fed302);
   font-weight: bold;
-  box-shadow: 0 0 0 2px var(--store-bg, #fff), 0 0 0 4px rgba(225,59,46,0.2);
+  box-shadow: 0 0 0 2px var(--store-bg, #010101), 0 0 0 4px rgba(254,211,2,0.2);
 }
 
 .category-pill-mobile:hover {
-  background: rgba(225,59,46,0.07);
-  color: var(--store-accent, #e13b2e);
-  border-color: var(--store-accent, #e13b2e);
+  background: rgba(254,211,2,0.07);
+  color: var(--store-accent, #fed302);
+  border-color: var(--store-accent, #fed302);
 }
 
 @media (max-width: 768px) {

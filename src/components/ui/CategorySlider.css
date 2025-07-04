@@ -54,7 +54,7 @@
   width: 100%;
   height: 180px;
   overflow: hidden;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: linear-gradient(135deg, var(--store-primary) 0%, var(--store-secondary) 100%);
 }
 
 .category-image img {
@@ -78,7 +78,7 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, var(--store-secondary), var(--store-accent));
-  color: white;
+  color: var(--store-accent);
 }
 
 .category-icon {
@@ -92,7 +92,7 @@
   left: 0;
   right: 0;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-  color: white;
+  color: var(--store-accent);
   padding: 1rem 0.75rem 0.75rem;
   transform: translateY(100%);
   transition: transform 0.3s ease;
@@ -136,7 +136,7 @@
   top: 50%;
   transform: translateY(-50%);
   background: rgba(0, 169, 165, 0.9);
-  color: white;
+  color: var(--store-accent);
   border: none;
   border-radius: 50%;
   width: 44px;
@@ -248,7 +248,7 @@
     padding: 0.1rem;
     border-radius: 6px;
     min-width: 0;
-    background: white;
+    background: var(--store-accent);
     border: none;
   }
   .category-slider .slick-slide > div {
@@ -261,7 +261,7 @@
     padding: 0.5rem 1.2rem;
     border-radius: 32px;
     border: 2px solid #e13b2e;
-    background: #fff;
+    background: var(--store-accent);
     color: #e13b2e;
     box-shadow: none;
     display: flex;
@@ -272,14 +272,14 @@
     overflow: visible;
   }
   .category-item.active {
-    background: #fff;
+    background: var(--store-accent);
     color: #e13b2e;
     border: 2.5px solid #e13b2e;
     font-weight: bold;
-    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #e13b2e33;
+    box-shadow: 0 0 0 2px var(--store-accent), 0 0 0 4px #e13b2e33;
   }
   .category-item:hover {
-    background: #fff0ee;
+    background: var(--store-accent)0ee;
     color: #e13b2e;
     border-color: #e13b2e;
   }
@@ -309,7 +309,7 @@
     min-width: 0;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    background: white;
+    background: var(--store-accent);
   }
   .category-nav-arrow {
     display: none !important;

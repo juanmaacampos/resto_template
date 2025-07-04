@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useMenu, useCart } from './useMenu.js';
 import { useRealTimeStock } from './useRealTimeStock.js';
-import { StockIndicator } from './StockIndicator.jsx';
 import { getFirestore } from 'firebase/firestore';
 import ProductCard from '../components/ui/ProductCard.jsx';
 import './MenuComponents.css';
-import './StockIndicator.css';
 import { FaUtensils, FaSyncAlt } from 'react-icons/fa';
 
 // Utilidades para manejar items ocultos y disponibilidad

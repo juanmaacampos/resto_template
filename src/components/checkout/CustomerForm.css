@@ -3,10 +3,12 @@
   width: 100%;
   max-width: 100%;
   height: auto;
+  background: var(--text-color);
+  color: var(--secondary-color);
 }
 
 .customer-form h3 {
-  color: var(--dark-bg);
+  color: var(--secondary-color);
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
   font-weight: 600;
@@ -21,7 +23,7 @@
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: var(--secondary-color);
   font-weight: 500;
   font-size: 0.9rem;
 }
@@ -30,34 +32,33 @@
 .form-group textarea {
   width: 100%;
   padding: 0.75rem;
-  border: 2px solid #e9ecef;
+  border: 2px solid var(--primary-color);
   border-radius: 6px;
   font-size: 1rem;
   font-family: inherit;
   transition: border-color 0.3s ease;
   box-sizing: border-box;
-  background: white;
-  color: #333;
+  background: var(--text-color);
+  color: var(--secondary-color);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #00A9A5; /* Using turquoise */
-  box-shadow: 0 0 0 3px rgba(0, 169, 165, 0.1);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(254, 211, 2, 0.25);
 }
 
 .form-group input.error,
 .form-group textarea.error {
-  border-color: #dc3545;
-  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.15);
 }
 
 .form-group input:disabled,
 .form-group textarea:disabled {
-  background-color: #f8f9fa;
-  opacity: 0.6;
-  cursor: not-allowed;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .form-group textarea {
@@ -67,18 +68,14 @@
 }
 
 .error-message {
-  display: block;
-  color: #dc3545;
-  font-size: 0.8rem;
-  margin-top: 0.25rem;
-  font-weight: 500;
+  color: var(--primary-color);
 }
 
 .submit-btn {
   width: 100%;
   padding: 1rem 1.5rem;
-  background: #28a745;
-  color: white;
+  background: var(--primary-color);
+  color: var(--text-color);
   border: none;
   border-radius: 6px;
   font-size: 1.1rem;
@@ -89,13 +86,15 @@
 }
 
 .submit-btn:hover:not(:disabled) {
-  background: #218838;
+  background: var(--secondary-color);
+  color: var(--text-color);
   transform: translateY(-1px);
   box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
 }
 
 .submit-btn:disabled {
-  background: #6c757d;
+  background: var(--background-color);
+  color: var(--secondary-color);
   cursor: not-allowed;
   transform: none;
   box-shadow: none;
@@ -159,11 +158,11 @@
 
 /* Form validation states */
 .form-group input:valid:not(:placeholder-shown) {
-  border-color: #00A9A5; /* Using turquoise for valid state */
+  border-color: var(--primary-color);
 }
 
 .form-group input:invalid:not(:placeholder-shown):not(.error) {
-  border-color: #ffc107;
+  border-color: var(--secondary-color);
 }
 
 /* Loading state */
@@ -174,7 +173,7 @@
 /* Accessibility improvements */
 .form-group input:focus-visible,
 .form-group textarea:focus-visible {
-  outline: 2px solid #00A9A5; /* Using turquoise */
+  outline: 2px solid var(--primary-color);
   outline-offset: 2px;
 }
 
@@ -182,5 +181,5 @@
 .form-group label:has(+ input[required])::after,
 .form-group label:has(+ textarea[required])::after {
   content: ' *';
-  color: #dc3545;
+  color: var(--store-secondary);
 }

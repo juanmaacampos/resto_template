@@ -1,6 +1,6 @@
 .navbar-modern {
-  background: #0f232a;
-  color: #fff;
+  background: var(--store-primary);
+  color: var(--white);
   box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
   width: 100%;
   position: fixed;
@@ -29,19 +29,19 @@
   display: flex;
   align-items: center;
   white-space: nowrap;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #14b8a6;
   text-decoration: none;
-  transition: color 0.2s;
+  transition: transform 0.2s;
   margin-right: 2.5rem;
+  height: 50px;
 }
 .navbar-modern-logo:hover {
-  color: #2dd4bf;
+  transform: scale(1.05);
 }
-.navbar-modern-logo-icon {
-  font-size: 2rem;
-  margin-right: 0.5rem;
+.navbar-modern-logo-img {
+  height: 100%;
+  width: auto;
+  max-height: 50px;
+  object-fit: contain;
 }
 
 .navbar-modern-menu {
@@ -55,8 +55,8 @@
 .navbar-modern-link {
   display: flex;
   align-items: center;
-  color: #cbd5e1;
-  background: #1e293b;
+  color: var(--store-accent);
+  background: var(--store-primary);
   padding: 0.5rem 1.5rem;
   border-radius: 0.5rem;
   font-size: 1.08rem;
@@ -66,8 +66,8 @@
   margin: 0 0.25rem;
 }
 .navbar-modern-link:hover {
-  color: #fff;
-  background: #334155;
+  color: var(--white);
+  background: var(--store-secondary);
 }
 .navbar-modern-link-icon {
   font-size: 1.2rem;
@@ -90,18 +90,19 @@
 .navbar-modern-cart {
   display: flex;
   align-items: center;
-  background: linear-gradient(90deg,#14b8a6,#38bdf8);
-  color: #fff;
+  background: var(--store-secondary);
+  color: var(--store-primary);
   font-weight: 600;
   padding: 0.5rem 1.2rem;
   border-radius: 999px;
   text-decoration: none;
-  box-shadow: 0 2px 8px 0 rgba(20,184,166,0.13);
+  box-shadow: 0 2px 8px 0 rgba(254, 211, 2, 0.13);
   position: relative;
   transition: background 0.2s;
 }
 .navbar-modern-cart:hover {
-  background: linear-gradient(90deg,#0ea5e9,#14b8a6);
+  background: var(--store-accent);
+  color: var(--store-primary);
 }
 .navbar-modern-cart-icon {
   font-size: 1.3rem;
@@ -111,8 +112,8 @@
   position: absolute;
   top: -10px;
   right: -10px;
-  background: #fff;
-  color: #14b8a6;
+  background: var(--white);
+  color: var(--store-secondary);
   border-radius: 50%;
   width: 22px;
   height: 22px;
@@ -121,14 +122,14 @@
   justify-content: center;
   font-size: 0.9rem;
   font-weight: 700;
-  border: 2px solid #14b8a6;
+  border: 2px solid var(--store-secondary);
   box-shadow: 0 2px 8px rgba(0,0,0,0.13);
 }
 
 .navbar-modern-mobile-btn {
   background: none;
   border: none;
-  color: #cbd5e1;
+  color: var(--store-accent);
   display: none;
   align-items: center;
   cursor: pointer;
@@ -140,11 +141,11 @@
 
 /* Mobile menu */
 .navbar-modern-mobile-menu {
-  background: #1e293b;
+  background: var(--store-primary);
   padding: 1rem 2rem 1.5rem 2rem;
   border-bottom-left-radius: 1.2rem;
   border-bottom-right-radius: 1.2rem;
-  box-shadow: 0 8px 32px 0 rgba(20,184,166,0.10);
+  box-shadow: 0 8px 32px 0 rgba(254, 211, 2, 0.10);
 }
 .navbar-modern-search-mobile {
   margin-bottom: 1rem;
@@ -166,6 +167,10 @@
   .navbar-modern-logo {
     justify-content: center;
     margin: 0 0 0.5rem 0;
+    height: 40px;
+  }
+  .navbar-modern-logo-img {
+    max-height: 40px;
   }
   .navbar-modern-actions {
     margin: 0;
@@ -191,6 +196,10 @@
   .navbar-modern-logo {
     font-size: 1.1rem;
     margin: 0 0 0.3rem 0;
+    height: 35px;
+  }
+  .navbar-modern-logo-img {
+    max-height: 35px;
   }
   .navbar-modern-actions {
     gap: 0.7rem;

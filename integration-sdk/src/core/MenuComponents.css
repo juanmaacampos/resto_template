@@ -13,7 +13,7 @@
   --menu-warning: #ed8936;
   --menu-text: #2d3748;
   --menu-text-light: #718096;
-  --menu-bg: #ffffff;
+  --menu-bg: #f2f2f2; /* Fondo ligeramente más oscuro para mejorar contraste */
   --menu-bg-alt: #f7fafc;
   --menu-border: #e2e8f0;
   --menu-radius: 8px;
@@ -95,7 +95,7 @@
   color: var(--menu-text);
   margin-bottom: 0.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 3px solid var(--menu-primary);
+  border-bottom: 3px solid var(--store-secondary); /* Línea de categoría en amarillo */
   font-weight: 600;
 }
 

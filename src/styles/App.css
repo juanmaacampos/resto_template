@@ -5,14 +5,14 @@
 }
 
 :root {
-  --primary-yellow: #90C2E7; /* Light Sky Blue - main accent */
-  --store-primary: #092327; /* Gunmetal - main dark */
-  --store-secondary: #00A9A5; /* Light sea green - accent actions */
-  --store-accent: #4E8098; /* Air Force blue - highlights */
-  --dark-bg: #0B5351; /* Dark slate gray - background */
-  --white: #FFFFFF;
-  --gray: #4E8098; /* Air Force blue for grays */
-  --light-gray: #90C2E7; /* Light sky blue for light text */
+  --primary-yellow: #fed302; /* Anthony Burger Yellow - main accent */
+  --store-primary: #010101; /* Black - main dark */
+  --store-secondary: #fed302; /* Yellow - accent actions */
+  --store-accent: #e0e0e0; /* Slightly darker Light Gray - improves contrast */
+  --dark-bg: #010101; /* Black - background */
+  --white: #4b4b4b;
+  --gray: #010101; /* Black for grays */
+  --light-gray: #fed302; /* Yellow for light text */
   --font-primary: 'Geologica', sans-serif;
   --font-script: 'Pacifico', cursive;
 }
@@ -52,12 +52,22 @@ body {
   font-weight: 700;
   text-align: center;
   margin-bottom: 3rem;
-  color: var(--store-secondary); /* Changed from primary-yellow to store-secondary (turquoise) */
+  color: var(--store-secondary); /* Using Anthony yellow for titles */
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--primary-yellow); /* Change underline to primary yellow */
+  margin: 0.5rem auto 1.5rem;
 }
 
 .btn-primary {
-  background: var(--store-secondary); /* Using turquoise for primary buttons */
-  color: var(--white);
+  background: var(--store-secondary); /* Using Anthony yellow for primary buttons */
+  color: var(--store-primary);
   border: none;
   padding: 1rem 2rem;
   font-size: 1.1rem;
@@ -71,9 +81,10 @@ body {
 }
 
 .btn-primary:hover {
-  background: var(--store-accent); /* Air Force blue on hover */
+  background: var(--store-accent); /* White on hover */
+  color: var(--store-primary); /* Black text on white background */
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0, 169, 165, 0.3); /* Turquoise shadow */
+  box-shadow: 0 10px 20px rgba(254, 211, 2, 0.5); /* Yellow shadow */
 }
 
 .fade-in {

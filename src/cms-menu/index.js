@@ -24,20 +24,11 @@ export {
   useRealTimeStock, 
   useRealTimeStockByCategory 
 } from './useRealTimeStock.js';
-export { 
-  StockIndicator, 
-  StockSummary 
-} from './StockIndicator.jsx';
 
 // 👁️ Exportaciones del sistema de visibilidad de items
 export { 
   ItemVisibilityManager 
 } from './ItemVisibilityManager.jsx';
-
-// 📊 Ejemplos y plantillas
-export { 
-  default as StockExamples 
-} from './stock-examples.jsx';
 export { 
   default as VisibilityExamples 
 } from './visibility-examples.jsx';

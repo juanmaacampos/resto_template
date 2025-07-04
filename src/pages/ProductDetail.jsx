@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useMenu as useMenuContext } from '../context/MenuContext.jsx';
 import { useCart } from '../cms-menu/useMenu.js';
-import { StockIndicator } from '../cms-menu/StockIndicator.jsx';
 import { 
   FaShoppingCart, FaUtensils, FaCheck, FaExclamationTriangle, FaTimes, FaInfinity, FaStar, FaTruck, FaLock, FaCreditCard, FaSpinner
 } from 'react-icons/fa';

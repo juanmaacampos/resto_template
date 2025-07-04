@@ -3,14 +3,14 @@
   margin: 2rem auto;
   padding: 2rem;
   text-align: center;
-  background: #f8f9fa;
+  background: var(--store-primary);
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .pending-icon {
   font-size: 4rem;
-  color: #ffc107;
+  color: var(--store-secondary);
   margin-bottom: 1rem;
   animation: pulse 2s infinite;
 }
@@ -22,19 +22,19 @@
 }
 
 .pending-title {
-  color: #ffc107;
+  color: var(--store-secondary);
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 .pending-message {
-  color: #6c757d;
+  color: var(--store-accent);
   font-size: 1.1rem;
   margin-bottom: 2rem;
 }
 
 .order-details {
-  background: white;
+  background: var(--store-accent);
   padding: 1.5rem;
   border-radius: 8px;
   margin: 2rem 0;
@@ -42,9 +42,9 @@
 }
 
 .order-details h3 {
-  color: #495057;
+  color: var(--store-accent);
   margin-bottom: 1rem;
-  border-bottom: 2px solid #ffc107;
+  border-bottom: 2px solid var(--store-secondary);
   padding-bottom: 0.5rem;
 }
 
@@ -59,13 +59,13 @@
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 0;
-  border-bottom: 1px solid #e9ecef;
+  border-bottom: 1px solid var(--store-secondary);
 }
 
 .order-info-item:last-child {
   border-bottom: none;
   font-weight: bold;
-  color: #ffc107;
+  color: var(--store-secondary);
 }
 
 .action-buttons {
@@ -86,22 +86,22 @@
 }
 
 .btn-primary {
-  background: #007bff;
-  color: white;
+  background: var(--store-secondary);
+  color: var(--store-accent);
 }
 
 .btn-primary:hover {
-  background: #0056b3;
+  background: var(--store-primary);
   transform: translateY(-2px);
 }
 
 .btn-secondary {
-  background: #6c757d;
-  color: white;
+  background: var(--store-accent);
+  color: var(--store-accent);
 }
 
 .btn-secondary:hover {
-  background: #545b62;
+  background: var(--store-primary);
   transform: translateY(-2px);
 }
 
@@ -112,7 +112,7 @@
 }
 
 .error {
-  color: #dc3545;
+  color: var(--store-secondary);
 }
 
 @media (max-width: 768px) {

@@ -77,7 +77,7 @@
 }
 
 .btn-whatsapp {
-  background: #25D366;
+  background: var(--store-secondary);
   color: white;
   border: none;
   padding: 1.2rem 2rem;
@@ -94,7 +94,7 @@
 }
 
 .btn-whatsapp:hover {
-  background: #1da851;
+  background: var(--store-secondary);
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
 }
@@ -225,7 +225,7 @@
 
 .cash-info p {
   margin: 0;
-  color: #ffc107;
+  color: var(--store-secondary);
   font-size: 0.95rem;
   text-align: center;
 }
