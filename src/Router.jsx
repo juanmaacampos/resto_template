@@ -11,7 +11,7 @@ import PaymentDebugInfo from './pages/PaymentDebugInfo.jsx';
 
 const Router = () => {
   return (
-    <BrowserRouter basename="/shop_template">
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         {/* Ruta principal del restaurante */}
         <Route path="/" element={<App />} />
