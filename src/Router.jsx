@@ -10,8 +10,10 @@ import PaymentDebugInfo from './pages/PaymentDebugInfo.jsx';
 // import PaymentDebug from './pages/PaymentDebug.jsx';
 
 const Router = () => {
+  const basename = import.meta.env.BASE_URL.replace(/\/$/, '');
+  
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <BrowserRouter basename={basename}>
       <Routes>
         {/* Ruta principal del restaurante */}
         <Route path="/" element={<App />} />
